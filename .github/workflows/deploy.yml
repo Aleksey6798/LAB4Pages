@@ -11,12 +11,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-
-    - name: Install dependencies
-      run: npm install # Настройте в зависимости от используемых инструментов
-
+      
     - name: Build project
-      run: npm run build # Настройте в зависимости от используемых инструментов
+      run: npm run build 
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
